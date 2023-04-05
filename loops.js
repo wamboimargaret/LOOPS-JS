@@ -22,8 +22,8 @@ function multiply(num){
 //Write a function that takes in an array of numbers and consoles the first four items multiplied by 8 and the last two added by 5. Console the array with the new values
 //let nums = [2,4,6,8,3,12,]
 function numArray(nums){
-    const fourItems = num.slice(0, 4).map(number => number * 8);
-    const twoItems = num.slice(-2).map(number => number + 5);
+    const fourItems = nums.slice(0, 4).map(number => number * 8);
+    const twoItems = nums.slice(-2).map(number => number + 5);
     const combined = [...fourItems, ...twoItems];
     console.log(combined);
 }
